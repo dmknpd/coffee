@@ -1,0 +1,33 @@
+.menu {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 40px;
+  list-style: none;
+
+  font-weight: 400;
+  font-size: 12px;
+  color: #fff;
+}
+
+.menu__item {
+  z-index: 1;
+}
+
+.menu__item:hover {
+  -webkit-text-stroke: 1px rgb(85, 84, 71);
+  transform: scale(110%);
+}
+
+.menu__item-main {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.menu__item-icon {
+  margin-right: -8px;
+  position: relative;
+  bottom: -8px;
+  z-index: 1;
+}

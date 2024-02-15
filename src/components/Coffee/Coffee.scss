@@ -1,0 +1,14 @@
+.coffee {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 25px;
+}
+
+.coffee__line {
+  border: 1px solid #fff;
+  width: 60px;
+  height: 0px;
+  position: relative;
+  top: -5px;
+}
