@@ -1,0 +1,33 @@
+.aboutText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 79px;
+}
+
+.aboutText__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-height: 355px;
+}
+
+.aboutText__title {
+  font-weight: 400;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.aboutText__text_container {
+  margin-top: 25px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  color: #000;
+}
+
+.about__img {
+  box-shadow: 5px 5px 30px 0 rgba(0, 0, 0, 0.25);
+}

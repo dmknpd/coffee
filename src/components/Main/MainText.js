@@ -1,15 +1,15 @@
 import Coffee from "../Coffee/Coffee";
 
-import "./Text.scss";
+import "./MainText.scss";
 
-const Main = () => {
+const MainText = () => {
   return (
-    <main className="text">
-      <div className="text__content">
-        <h3 className="text__title">About Us</h3>
+    <main className="mainText">
+      <div className="mainText__content">
+        <h3 className="mainText__title">About Us</h3>
         <Coffee color={"black"}></Coffee>
-        <div className="text__text_container">
-          <p className="text__text">
+        <div className="mainText__text_container">
+          <p className="mainText__text">
             Extremity sweetness difficult behaviour he of. On disposal of as
             landlord horrible. Afraid at highly months do things on at.
             Situation recommend objection do intention so questions. As greatly
@@ -17,7 +17,7 @@ const Main = () => {
             shy want. Children me laughing we prospect answered followed. At it
             went is song that held help face.
           </p>
-          <p className="text__text">
+          <p className="mainText__text">
             Now residence dashwoods she excellent you. Shade being under his bed
             her, Much read on as draw. Blessing for ignorant exercise any
             yourself unpacked. Pleasant horrible but confined day end marriage.
@@ -31,4 +31,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default MainText;

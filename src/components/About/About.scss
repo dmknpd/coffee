@@ -1,0 +1,20 @@
+.about__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 70px 352px 60px 391px;
+  gap: 79px;
+}
+
+.about__line_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about__line {
+  border: 1px solid #000;
+  width: 240px;
+  height: 0px;
+  margin-bottom: 60px;
+}

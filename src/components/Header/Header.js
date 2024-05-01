@@ -5,7 +5,7 @@ import "./Header.scss";
 
 const Header = (props) => {
   return (
-    <header className="header">
+    <header className={props.headerText ? "header_about" : "header"}>
       <header className="header__menu">
         <Menu></Menu>
       </header>
@@ -20,7 +20,7 @@ const Header = (props) => {
           <button className="header__button">More</button>
         </div>
       ) : (
-        <div className="header__content">
+        <div className="header__content_about">
           <h1 className="header__title">{props.headerText}</h1>
         </div>
       )}
