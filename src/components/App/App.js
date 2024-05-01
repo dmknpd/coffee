@@ -1,10 +1,7 @@
 import { Fragment, useState } from "react";
-import Header from "../Header/Header";
 import Main from "../Main/Main";
-import Promotion from "../Main/Promotion/Promotion";
 
 import "./App.scss";
-import Footer from "../Footer/Footer";
 
 const App = () => {
   const [data, setData] = useState([
@@ -17,10 +14,7 @@ const App = () => {
 
   return (
     <Fragment>
-      <Header></Header>
-      <Main></Main>
-      <Promotion data={data}></Promotion>
-      <Footer></Footer>
+      <Main data={data}></Main>
     </Fragment>
   );
 };
