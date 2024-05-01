@@ -1,10 +1,12 @@
-import { Fragment, useState } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { useState } from "react";
 import Main from "../Main/Main";
+import About from "../About/About";
 
 import "./App.scss";
 
 const App = () => {
-  const [data, setData] = useState([
+  const [data] = useState([
     { id: 0, name: "Solimo Coffee Beans 2 kg", price: "10.73", sold: 10 },
     { id: 1, name: "Presto Coffee Beans 1 kg", price: "15.99", sold: 15 },
     { id: 2, name: "AROMISTICO Coffee 1 kg", price: "6.99", sold: 12 },
@@ -13,9 +15,12 @@ const App = () => {
   ]);
 
   return (
-    <Fragment>
-      <Main data={data}></Main>
-    </Fragment>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Main data={data} />}></Route>
+        <Route path="/about" element={<About />}></Route>
+      </Routes>
+    </Router>
   );
 };
 

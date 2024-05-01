@@ -7,7 +7,7 @@ import Footer from "../Footer/Footer";
 const Main = ({ data }) => {
   return (
     <Fragment>
-      <Header></Header>
+      <Header main={true}></Header>
       <Text></Text>
       <Promotion data={data}></Promotion>
       <Footer></Footer>
