@@ -5,7 +5,7 @@ import second from "../../img/PromotionImg/second.jpg";
 import third from "../../img/PromotionImg/third.jpg";
 
 const PromotionItem = (props) => {
-  const { name, price, img } = props;
+  const { name, price } = props;
   return (
     <li className="promotion__item">
       <div className="promotion__item_content">
