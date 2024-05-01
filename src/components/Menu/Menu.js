@@ -12,7 +12,7 @@ class Menu extends Component {
         className="menu"
         style={color === "black" ? { color: "black" } : { color: "white" }}
       >
-        <span className="menu__item-main">
+        <li className="menu__item">
           <img
             src={color === "black" ? coffeeLogoBlack : coffeeLogoWhite}
             style={
@@ -21,8 +21,9 @@ class Menu extends Component {
             alt="coffee logo"
             className="menu__item-icon"
           />
-          <li className="menu__item">Coffee house</li>
-        </span>
+          Coffee house
+        </li>
+
         <li className="menu__item">Our coffee</li>
         <li className="menu__item">For your pleasure</li>
       </ul>
