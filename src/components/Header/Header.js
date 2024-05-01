@@ -5,7 +5,7 @@ import "./Header.scss";
 
 const Header = (props) => {
   return (
-    <header className={props.headerText ? "header_about" : "header"}>
+    <header className={props.headerText ? "about_header" : "header"}>
       <header className="header__menu">
         <Menu></Menu>
       </header>

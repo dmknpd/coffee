@@ -1,11 +1,11 @@
-.aboutText {
+.about_text {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 79px;
 }
 
-.aboutText__content {
+.about_text__content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,13 +13,13 @@
   max-height: 355px;
 }
 
-.aboutText__title {
+.about_text__title {
   font-weight: 400;
   font-size: 24px;
   margin-bottom: 20px;
 }
 
-.aboutText__text_container {
+.about_text__text_container {
   margin-top: 25px;
   font-family: var(--font-family);
   font-weight: 400;

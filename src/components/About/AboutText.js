@@ -4,13 +4,13 @@ import "./AboutText.scss";
 
 const AboutText = ({ img }) => {
   return (
-    <main className="aboutText">
+    <main className="about_text">
       <img src={img} alt="girl drink coffee" className="about__img" />
-      <div className="aboutText__content">
-        <h3 className="aboutText__title">About our beans</h3>
+      <div className="about_text__content">
+        <h3 className="about_text__title">About our beans</h3>
         <Coffee color={"black"}></Coffee>
-        <div className="aboutText__text_container">
-          <p className="aboutText__text">
+        <div className="about_text__text_container">
+          <p className="about_text__text">
             Extremity sweetness difficult behaviour he of. On disposal of as
             landlord horrible.
           </p>
