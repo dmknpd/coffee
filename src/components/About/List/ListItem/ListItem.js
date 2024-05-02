@@ -1,5 +1,4 @@
 import "./ListItem.scss";
-import third from "../../../img/PromotionImg/third.jpg";
 
 const ListItem = (props) => {
   const { name, price, country, src } = props;
