@@ -29,7 +29,7 @@ const Menu = (color) => {
         </Link>
       </li>
       <li className="menu__item">
-        <Link to="/" className="menu__item_link" style={color}>
+        <Link to="/pleasure" className="menu__item_link" style={color}>
           For your pleasure
         </Link>
       </li>

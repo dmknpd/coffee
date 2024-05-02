@@ -4,7 +4,7 @@ import ListItem from "./ListItem/ListItem";
 
 import "./List.scss";
 
-const List = ({ data }) => {
+const List = ({ data, menu }) => {
   const [filter, setFilter] = useState("");
   const [search, setSearch] = useState("");
 
@@ -39,46 +39,48 @@ const List = ({ data }) => {
 
   return (
     <div className="list">
-      <div className="list_menu">
-        <div className="list_menu__conatainer">
-          <div className="list_menu__search">
-            <label className="list_menu__label" htmlFor="list_menu__input">
-              Lookiing for
-            </label>
-            <input
-              type="text"
-              className="list_menu__input"
-              id="list_menu__input"
-              placeholder="start typing here..."
-              value={search}
-              onChange={searchChange}
-            />
-          </div>
-          <div className="list_menu__filters">
-            <p className="list_menu__filters_label">Or filter</p>
-            <div className="list_menu__filters_button_container">
-              <button
-                className="list_menu__filters_button"
-                onClick={() => filterChange("Brazil")}
-              >
-                Brazil
-              </button>
-              <button
-                className="list_menu__filters_button"
-                onClick={() => filterChange("Kenya")}
-              >
-                Kenya
-              </button>
-              <button
-                className="list_menu__filters_button"
-                onClick={() => filterChange("Columbia")}
-              >
-                Columbia
-              </button>
+      {menu ? (
+        <div className="list_menu">
+          <div className="list_menu__conatainer">
+            <div className="list_menu__search">
+              <label className="list_menu__label" htmlFor="list_menu__input">
+                Lookiing for
+              </label>
+              <input
+                type="text"
+                className="list_menu__input"
+                id="list_menu__input"
+                placeholder="start typing here..."
+                value={search}
+                onChange={searchChange}
+              />
+            </div>
+            <div className="list_menu__filters">
+              <p className="list_menu__filters_label">Or filter</p>
+              <div className="list_menu__filters_button_container">
+                <button
+                  className="list_menu__filters_button"
+                  onClick={() => filterChange("Brazil")}
+                >
+                  Brazil
+                </button>
+                <button
+                  className="list_menu__filters_button"
+                  onClick={() => filterChange("Kenya")}
+                >
+                  Kenya
+                </button>
+                <button
+                  className="list_menu__filters_button"
+                  onClick={() => filterChange("Columbia")}
+                >
+                  Columbia
+                </button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      ) : null}
       <div className="list__content">{elements}</div>
     </div>
   );

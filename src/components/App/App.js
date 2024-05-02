@@ -3,6 +3,7 @@ import { useState } from "react";
 import Main from "../Main/Main";
 import About from "../About/About";
 import SingleCoffee from "../SingleCoffee/SingleCoffee";
+import Pleasure from "../Pleasure/Pleasure";
 
 import "./App.scss";
 import first from "../img/PromotionImg/first.jpg";
@@ -77,6 +78,10 @@ const App = () => {
         <Route
           path="/:id"
           element={<SingleCoffee data={data}></SingleCoffee>}
+        ></Route>
+        <Route
+          path="/pleasure"
+          element={<Pleasure data={data}></Pleasure>}
         ></Route>
       </Routes>
     </Router>

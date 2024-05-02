@@ -12,12 +12,12 @@ const About = ({ data }) => {
     <Fragment>
       <Header headerText={"Our Coffee"}></Header>
       <div className="about__content">
-        <AboutText img={about_jpg}></AboutText>
+        <AboutText img={about_jpg} title={"About our beans"}></AboutText>
       </div>
       <div className="about__line_wrapper">
         <div className="about__line"></div>
       </div>
-      <List data={data}></List>
+      <List data={data} menu={true}></List>
       <Footer></Footer>
     </Fragment>
   );

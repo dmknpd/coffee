@@ -20,6 +20,7 @@ const SingleCoffee = ({ data }) => {
       <div className="about__content">
         <AboutText
           img={singleCoffee_jpg}
+          title={"About it"}
           country={country}
           description={description}
           price={price}
