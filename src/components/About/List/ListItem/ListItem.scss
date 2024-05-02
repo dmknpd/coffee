@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 60px;
+  text-decoration: none;
 }
 
 .list_item:nth-last-child(-n + 3) {
@@ -18,6 +19,11 @@
   width: 220px;
   height: 260px;
   box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.list_item__content:hover {
+  transform: scale(1.02);
 }
 
 .list_item__img {

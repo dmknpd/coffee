@@ -34,8 +34,7 @@ const List = ({ data }) => {
     : filteredData;
 
   const elements = filteredAndSearchedData.map((item) => {
-    const { id, ...itemProps } = item;
-    return <ListItem key={id} {...itemProps} />;
+    return <ListItem key={item.id} {...item} />;
   });
 
   return (

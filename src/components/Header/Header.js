@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Menu from "../Menu/Menu";
 import Coffee from "../Coffee/Coffee";
 
@@ -17,7 +18,9 @@ const Header = (props) => {
             We makes every day full of energy and taste
           </h2>
           <h2 className="header__text">Want to try our beans?</h2>
-          <button className="header__button">More</button>
+          <Link to="/about" className="menu__item_link">
+            <button className="header__button">More</button>
+          </Link>
         </div>
       ) : (
         <div className="header__content_about">

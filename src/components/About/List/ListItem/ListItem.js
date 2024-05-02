@@ -1,9 +1,11 @@
+import { Link } from "react-router-dom";
+
 import "./ListItem.scss";
 
 const ListItem = (props) => {
-  const { name, price, country, src } = props;
+  const { id, name, price, country, src } = props;
   return (
-    <div className="list_item">
+    <Link to={`/${id}`} className="list_item">
       <div className="list_item__content">
         <img src={src} alt="Coffee preview" className="list_item__img" />
         <div className="list_item__text_container">
@@ -12,7 +14,7 @@ const ListItem = (props) => {
           <p className="list_item__text">{price}$</p>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 
