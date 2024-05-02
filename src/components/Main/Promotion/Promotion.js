@@ -7,8 +7,7 @@ const Promotion = ({ data }) => {
     .sort((a, b) => b.sold - a.sold) //sorted by sold items
     .slice(0, 3) // top 3
     .map((item) => {
-      const { id, ...itemProps } = item;
-      return <PromotionItem key={id} {...itemProps} />;
+      return <PromotionItem key={item.id} {...item} />;
     });
   return <ul className="promotion__items">{elements}</ul>;
 };

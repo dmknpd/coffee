@@ -9,10 +9,10 @@ import singleCoffee_jpg from "../img/SingleCoffee.jpg";
 
 const SingleCoffee = ({ data }) => {
   const { id } = useParams();
-  const coffee = data[id];
-  const country = coffee.country;
-  const description = coffee.description;
-  const price = coffee.price;
+  const coffee = data.filter((item) => item.id === +id);
+  const country = coffee[0].country;
+  const description = coffee[0].description;
+  const price = coffee[0].price;
 
   return (
     <Fragment>
